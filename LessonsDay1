@@ -1,0 +1,3 @@
+#Kjører input() først, og så resten av print()
+print('Hello ' + input('What is your name: ') + '!')
+
