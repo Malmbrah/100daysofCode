@@ -24,5 +24,5 @@ print(bmi)
 #Hvis man prøver å printe string + int så blir det feil
 #print("Din score er: " + integer_example) #Denne vil ikke funke - Man får en TypeError
 
-#Denne vil dog funke siden vi bruker en f-string
-print(f"Din score er: {integer_example}")
+#Denne vil dog funke siden vi bruker en f-string. Man kan kombinere typer
+print(f"Din score er: {integer_example} or more presicely {float_example}")
