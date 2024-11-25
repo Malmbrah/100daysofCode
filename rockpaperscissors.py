@@ -29,7 +29,7 @@ scissors = '''
 
 handsignals = [rock, paper, scissors]
 
-your_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
+your_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 #Computer velger en tilfeldig innenfor 
 computer_choice = random.choice(handsignals)
 
@@ -40,14 +40,14 @@ print(computer_choice)
 if handsignals[your_choice] == computer_choice:
     print("It's a tie")
 
-elif handsignals[your_choice] == handsignals[0] and computer_choice == handsignals[2]:
+elif handsignals[your_choice] == handsignals[0] and computer_choice == handsignals[2] or handsignals[your_choice] == handsignals[1] and computer_choice == handsignals[0] or handsignals[your_choice] == handsignals[2] and computer_choice == handsignals[1]:
     print("You win")
 
-elif handsignals[your_choice] == handsignals[1] and computer_choice == handsignals[0]:
-    print("You win")
+#elif handsignals[your_choice] == handsignals[1] and computer_choice == handsignals[0]:
+    #print("You win")
 
-elif handsignals[your_choice] == handsignals[2] and computer_choice == handsignals[1]:
-    print("You win")
+#elif handsignals[your_choice] == handsignals[2] and computer_choice == handsignals[1]:
+    #print("You win")
 
 else:
     print("You lose")
