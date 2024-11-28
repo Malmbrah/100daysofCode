@@ -33,6 +33,7 @@ if nr_letters != 0 and nr_symbols != 0 and nr_numbers != 0:
 
     #HARD VERSION
     harder_password = ""
+    #Går basically gjennom de allerede plukkede tall/bokstav/symbol og så plukker choice tilfeldig fra de
     for new_item in range(1, len(generated_password) + 1):
         harder_password += random.choice(generated_password)
 
