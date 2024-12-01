@@ -9,7 +9,7 @@ def caesar(direction, original_text, shift_amount):
         encoded_text = ""  
     #Hvis man finner matchende bokstav i alphabet så legger man til bokstav.index + shift_amount. 
         for letter in original_text:
-            #Hvis symbolet ikke er med i listen så legger vi den til i encoded som den er
+            #Hvis symbolet ikke er med i listen så legger vi den til i encoded som den er, for å få med symboler
             if letter not in alphabet:               
                 encoded_text += letter
             else:
@@ -24,9 +24,9 @@ def caesar(direction, original_text, shift_amount):
     elif direction == "decode":
         decrypted_text = ""
 
-        for letter in original_text:
+        for decode_letter in original_text:
             #shiften_position finner indexen til bokstav i alphabet og så trekker fra shift_amount for å gå bakover
-            shifted_position = alphabet.index(letter) - shift_amount
+            shifted_position = alphabet.index(decode_letter) - shift_amount
             #Denne her sikrer at man ikke går utenfor lengden til alfabetet. Da begynner man på nytt
             shifted_position %= len(alphabet)
             #Legger til den nye bokstaven til encoded_text
