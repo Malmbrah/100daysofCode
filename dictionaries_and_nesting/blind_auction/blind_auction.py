@@ -28,7 +28,7 @@ iiii) Once all participants have placed their bid, the program works out who has
 blind_auction = {}
 print(blind_auction_art.logo)
 
-def print_dictinary():
+def find_highest_bidder():
     #Lager en tom variabel som skal fylles inn
     max_bid = 0
     max_bid_name = ""
@@ -66,7 +66,7 @@ def main():
             continue
         elif any_others_making_a_bid == "no":
             print("\n" * 20)
-            print_dictinary()
+            find_highest_bidder()
             #Avslutter loopen
             stop_bidding = True
         else:
