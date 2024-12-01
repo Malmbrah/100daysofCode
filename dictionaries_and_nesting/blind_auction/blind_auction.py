@@ -40,7 +40,7 @@ def print_dictinary():
             max_bid = blind_auction[name]
             #Hvis det er den høyeste verdien så blir navnet også lagret
             max_bid_name = name
-    print(max_bid_name, " has the highest bid with: ","$", max_bid)
+    print(f"{max_bid_name} is the winner with ${max_bid}")
             
 
 def bidding():
