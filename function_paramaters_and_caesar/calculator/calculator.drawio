@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="25.0.1">
+  <diagram name="Page-1" id="jl8A1vra_xK1U742xSAv">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-1" target="dDPdaM-zmukHTv5OvdpX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-1" value="Ask for first number" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="50" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-2" target="dDPdaM-zmukHTv5OvdpX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-2" value="&lt;div&gt;prints different symbols for calculation (+,-,*,/)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="110" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-4" target="dDPdaM-zmukHTv5OvdpX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-4" value="Pick an operation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="200" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-6" target="dDPdaM-zmukHTv5OvdpX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-6" value="Asks user what is the next number" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="260" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-8" target="dDPdaM-zmukHTv5OvdpX-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-8" value="&lt;div&gt;Prints the answer&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="330" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="291" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-14" value="&lt;div&gt;User chooses to use answer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=-90;" vertex="1" connectable="0" parent="dDPdaM-zmukHTv5OvdpX-13">
+          <mxGeometry x="0.9063" y="1" relative="1" as="geometry">
+            <mxPoint x="-29" y="139" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-18" value="User presses &quot;y&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dDPdaM-zmukHTv5OvdpX-13">
+          <mxGeometry x="-0.6966" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="dDPdaM-zmukHTv5OvdpX-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="480" as="targetPoint" />
+            <mxPoint x="520" y="480" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="520" y="65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-23" value="User presses &quot;n&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=89;" vertex="1" connectable="0" parent="dDPdaM-zmukHTv5OvdpX-21">
+          <mxGeometry x="-0.0779" y="-4" relative="1" as="geometry">
+            <mxPoint x="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-10" value="Asks user if user want to continue using the answer or make a new calculation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="440" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.061;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dDPdaM-zmukHTv5OvdpX-10" target="dDPdaM-zmukHTv5OvdpX-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDPdaM-zmukHTv5OvdpX-17" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.65;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="dDPdaM-zmukHTv5OvdpX-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="150" as="sourcePoint" />
+            <mxPoint x="340" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
