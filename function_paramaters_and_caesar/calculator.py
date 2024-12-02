@@ -1,3 +1,4 @@
+import calculator_art
 def add(n1, n2):
     return n1 + n2
 
@@ -36,6 +37,8 @@ def continue_with_answer(previous_answer):
         new_calculation()
 
 def new_calculation():
+    print("\n" * 20)
+    print(calculator_art.logo)
     first_number = int(input("Please write the first number: "))
     what_operation = input(" + \n - \n * \n /\n What mathematical operation do you want to perform?: ")
 
