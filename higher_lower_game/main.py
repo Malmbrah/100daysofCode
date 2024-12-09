@@ -4,28 +4,13 @@ import random
 
 LIST_OF_ALL_THE_PERSONS = game_data.data
 
+
 #Denne funksjonen skal generere en person fra game_data, og returnere personen og dens info
 def generate_person():
     #Denne går inn i game_data, så inn i data. Deretter tar jeg en tilfeldig index fra 0 til lengden av listen
-    #Person blir da altså én av de mange dictionaries i LIST_OF_ALL_THE_PERSONS
+    #person blir da altså én av de mange dictionaries i LIST_OF_ALL_THE_PERSONS
     person = LIST_OF_ALL_THE_PERSONS[random.randint(0, len(LIST_OF_ALL_THE_PERSONS) - 1)]
     return person
-
-"""
-def compare_followers_user_guessed_A(person_A, person_B):
-    if person_A['followers'] > person_B['followers']:
-        return True
-    else:
-        return False
-
-def compare_followers_user_guessed_B(person_A, person_B):
-    if person_A['followers'] < person_B['followers']:
-        return True
-    else:
-        return False
-"""
-def check_if_user_guess_correct(guess, person_A, person_B):
-    pass
 
 
 def game():
