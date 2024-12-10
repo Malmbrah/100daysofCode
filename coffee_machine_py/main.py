@@ -17,21 +17,63 @@ def check_resources_ingredients(user_order):
             if RESOURCES[resource] < user_order[ingredients]:
                 #returnerer en tuple for få med status OG hvilken ingrediens som ikke det er nok av
                 return False, resource
-            else:
-                return True, ""
+    return True, ""
 
-#HVORDAN KAN JEG ENDRE VERDIEN I MENU.py??!
-def do_you_have_enough_money(user_order):
-    print(f"RESOURCES[money]: {menu.resources["money"]}")
-    #Sjekker hva man har i resources vs hva drikken koster
-    if menu.resources["money"] < user_order["cost"]:
+
+def do_you_have_enough_money(drink_cost):
+
+    total_money_inserted = menu.resources["money"]
+    #Sjekker hva man har i resources vs hva drikken koster og passer på at den bruker legger inn nok penger
+    while total_money_inserted < drink_cost:
+        print(f"The drink is ${drink_cost}. You need to add more money. Current balance: ${total_money_inserted}")
         #Hvis man ikke har nok penger må man legge til mer
-        print(f"You need to add more money.")
-        added_money = int(input("How much money do you want to add?: $"))
+        added_money = float(input("How much money do you want to add?: $"))
         #Disse blir lagt inn i banken din
-        menu.resources["money"] += added_money
-        print(f"${added_money} was added to your bank. Your new total is ${menu.resources["money"]}")
+        total_money_inserted += added_money
+        print(f"${added_money} was inserted.")
 
+    change = total_money_inserted - drink_cost
+    if change > 0:
+        print(f"Here is ${round(change,2)} in change.")
+            
+
+def make_coffee(user_order):
+    #Sjekker verdien til hver ingrediens som matcher og trekker den fra det vi har
+    for ingredients in user_order:
+        for resource in RESOURCES:
+            if ingredients == resource:
+                RESOURCES[resource] -= user_order[ingredients]
+                
+def espresso():
+    #Setter espresso_dictionary til å være verdiene til de ulike ingrediensene i espresso
+    espresso_dictionary = menu.MENU["espresso"]["ingredients"]
+    espresso_cost = menu.MENU["espresso"]["cost"]
+    do_you_have_enough_money(espresso_cost)
+    #Setter status = False/True basert på om vi har nok resources, og not_enough_of_resource til å være den man ikke har nok av
+    status, not_enough_of_resource = check_resources_ingredients(espresso_dictionary)
+    print(f"status: {status}")
+    #Så hvis status er False
+    if not status:
+        print(f"Sorry, not enough of {not_enough_of_resource}")
+    else:
+        make_coffee(espresso_dictionary)
+        
+
+def latte():
+    #Setter espresso_dictionary til å være verdiene til de ulike ingrediensene i espresso
+    latte_dictionary = menu.MENU["latte"]["ingredients"]
+    latte_cost = menu.MENU["latte"]["cost"]
+    do_you_have_enough_money(latte_cost)
+    #Setter status = False/True basert på om vi har nok resources, og not_enough_of_resource til å være den man ikke har nok av
+    status, not_enough_of_resource = check_resources_ingredients(latte_dictionary)
+    #Så hvis status er False så går den inn i make coffe
+    if not status:
+        print(f"Sorry, not enough {not_enough_of_resource}")
+    else:
+        make_coffee(latte_dictionary)  
+
+def cappuccino():
+    pass
 
 def main():
     TURN_OFF = False
@@ -41,22 +83,23 @@ def main():
         if user_order == "report":
             report()
 
-        if user_order == "off":
+        elif user_order == "off":
             TURN_OFF = True
         
         #espresso-section
-        if user_order == "e":
-            #Setter espresso_dictionary til å være verdiene til de ulike ingrediensene i espresso
-            espresso_dictionary = menu.MENU["espresso"]["ingredients"]
-            espresso_cost = menu.MENU["espresso"]
-            do_you_have_enough_money(espresso_cost)
-            #Setter status = False/True basert på om vi har nok resources, og not_enough_of_resource til å være den man ikke har nok av
-            status, not_enough_of_resource = check_resources_ingredients(espresso_dictionary)
-            #Så hvis status er False
-            if not status:
-                print(f"Sorry, not enough of {not_enough_of_resource}")
-            else:
-                print("Du har nok resources")
+        elif user_order == "espresso":
+            espresso()
+            #print(f"Here is your {user_order}")
+
+        elif user_order == "latte":
+            latte()
+            #print(f"Here is your {user_order}")
+
+        elif user_order == "cappuccino":
+            cappuccino()
+            #print(f"Here is your {user_order}")
+
+
 
 
 
