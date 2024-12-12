@@ -1,0 +1,76 @@
+
+Hvorfor bruke objekt orientert programmering?
+
+"Procedural programming" er det vi har gjort frem til nå. Datamaskinen jobber top-down. Er en OG-måte.
+
+Objektorientert programmering gjør alt lettere. Eksempel: Du skal lage en selvkjørende bil. Hva slags prosedyrer trenger du? 
+
+1. Et kamera som plukker opp ting som skjer på veien.
+2. Noe "lane-detection"
+3. Navigasjon
+4. Fuel management 
+
+Det er mye mer, men vi kan bryte det ned i flere moduler. Som vi har gjort.
+Hvis vi nå skal lage en drone. Da kan vi bruke mange av de modulene igjen.
+
+
+
+
+HVORDAN BRUKE OOP?
+
+Det kalles objektorientert programmering fordi vi prøver å etterligne et objekt i virkeligheten. 
+
+Eksempel:
+
+Hvis du forsøker å etterligne en virituell restaurant. Da må vi etterligne en servitør, en kokk, en rengjører og en manager.
+
+La oss prøve oss på å etterligne en servitør:
+
+Vi må se på to ting:
+    
+    (ATTRIBUTES) Hva objektet HAR: 
+        is_holding_plate = True
+        tables_responsible = [3, 4, 5]
+
+    (METHODS) Hva objektet GJØR:
+    #Vi kaller det en METODE fordi den sier noe om hva et objekt KAN GJØRE. Selv om det er en funksjon
+
+        def take_order(table, order):
+            #Takes order to chef
+
+        def take_payment(amount):
+            #Add money to restaurant
+
+
+Et objekt er å kombinere data (ATTRIBUTES) og funksjonalitet (METHODS)
+    - Når vi har dette kan vi lage flere servitører fra samme BLUEPRINT
+
+Det betyr at vi har en CLASS = servitør og objekter = Henry eller Betty (som er servitører)
+
+
+
+HVORDAN LAGE OBJEKTER
+
+Si vi har en class = bil. Den sier noe om:
+
+    ATTRIBUTES:
+    - Hvor mye bensin den bruker
+    - Hvor raskt den går
+    osv osv 
+
+    METHODS:
+    - Evnen til å kjøre, stoppe og bremse
+
+    Fra denne classen kan vi lage objekter. 
+
+   #Objekt  #Class - Starter ofte med stor bokstav
+    car = CarBluePrint()
+
+
+
+HVORDAN BRUKE OBJEKTER
+
+Man får tak i attributes ved å skrive: objekt.attributes
+print(my_screen.canvheight)
+
+Man får tak i methods ved å skrive: objekt.method()
