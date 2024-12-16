@@ -1,0 +1,30 @@
+Class is a blueprint for creating an object
+
+#How to create a class - all classes should have PascalCase; MyCase. UserInput
+class User:
+    pass
+
+user_1 = User()
+
+#How to add attributes - Man lager altså en ny variabel som legger inn i user_1
+user_1.id = "001"
+user_1.username = "Jonte"
+
+#Constructor
+
+class Car:
+#__init__ er en spesiell metode som initialiser attributes som Python vet om
+#Self er det faktiske objektet som blir laget/initialisert
+#Man kan lage det med så mange attributes (seats) man vil 
+    def __init__(self, seats):
+        self.seats = seats
+        #initialise attributes
+
+my_car = Car(5)
+
+#How to add methods
+class Car:
+    def enter_race_mode():
+        self.seats = 2
+
+my_car.enter_race_mode()

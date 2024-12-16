@@ -1,0 +1,21 @@
+Importing modules
+
+Basic import:
+        #module
+import turtle
+
+#This is best practice if you use turtle a lot 
+from turtle import Turtle  #Then you do not need to constantly write turtle.Turtle()
+
+Import everything: 
+
+#Can make it difficult to later see an indipendent module further down in the code
+#Is usually not written
+from turtle import *
+
+Aliasing Modules:
+import turtle as t 
+tim = t.Turtle()
+
+Instaling Modules
+Sometimes you need to install modules if you want more functions. That is the pypi.org. - Python packages
