@@ -28,11 +28,12 @@ color_list = [(237, 230, 217), (63, 28, 7), (87, 96, 113), (166, 83, 30), (243, 
 t.pensize(10)
 t.speed(50)
 
+#Lager på doten fra fargelisten vi hentet ut
 def dot_color():
     color = random.choice(color_list)
     return color
-#Må prøve å øke y-aksen med 50 paces for hver gang
 
+#Lager en rad
 def making_a_row():
     for _ in range(10):
         making_dot()
@@ -40,15 +41,19 @@ def making_a_row():
         t.forward(50)
         t.pendown()
 
+#Dette er startpunktet som oppdaterer seg for hver gang man har laget en row
 def starting_point(y):
     t.teleport(-200,y)
 
+#Lager selve doten
 def making_dot():
     t.pencolor(dot_color())
     t.dot()
 
+#Starter på -200 for å få med hele greia i bildet
 y_increase = -200
 
+#Vet at vi skal lage 10 x 10 med 50 paces i mellom. Litt hardkodet men det funker
 while y_increase <= 300:
     starting_point(y_increase)
     making_a_row()
