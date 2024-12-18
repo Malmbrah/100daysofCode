@@ -19,3 +19,5 @@ tim = t.Turtle()
 
 Instaling Modules
 Sometimes you need to install modules if you want more functions. That is the pypi.org. - Python packages
+
+Extracting colors from a image
