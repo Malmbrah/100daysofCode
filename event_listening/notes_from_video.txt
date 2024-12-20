@@ -1,0 +1,38 @@
+from turtle import Turtle, Screen
+
+t = Turtle()
+screen = Screen()
+
+def move_forwards():
+    t.forward(10)
+
+#So that the screen listens after keypresses etc.
+screen.listen()
+
+#key = den knappen man trykker for å få ting til å skje.
+#Legg merke til at det ikke står move_forwards(). Det er fordi parenteser gjør at den funksjonen kicker i gang der og da
+#men vi vil at den kicker igang når mellomrom blir trykket på
+
+screen.onkey(key="space", fun = move_forwards)
+
+Functions as inputs
+
+def function_a(something):
+    #Do this with something
+    #Then do this
+    #Finally do this
+
+def function_b():
+    #Do this
+
+Veldig mulig å passe en funksjon inn i en annen funksjon
+function_a(function_b)
+
+HIGHER ORDER FUNCTIONS
+- It is a function that works with other functions
+
+Instances
+Det er basically at hvis vi lager flere t = Turtle(), m = Turtle() så vil de være ulike instances av Turtle()
+
+State
+Det handler om at t.color = green, m.color = purple. Da er deres color i ulike states
