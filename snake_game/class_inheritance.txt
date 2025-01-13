@@ -1,0 +1,31 @@
+Eksempel: Si at du har en robot kokk (object)- den kan metoder som bake(), stir(), measure(). Så starter det en bakekokk.
+Den trenger å kunne noe av det en vanlig kokk kan, men også noe ekstra. Da vil man kunne hente det kokken allerede kan,
+og så legge til mer.
+
+Man kan inheret attributes, men også oppførsel. 
+
+Inhertiance
+
+#Alt vi trenger for å inherit er å sette (navnet på class som man vil inherit fra). SÅ her inheriter Fish fra Animal
+
+class Animal:
+    def __init__(self):
+        self.num_eyes = 2
+
+    def breathe(self):
+        print("Inhale, exhale.")
+
+class Fish(Animal):
+    def __init__(self):
+    #Denne gjør at Fish inherits alt fra Animal. Animal er superclassen
+        super().__init__()
+
+    def breathe(self):
+    #Dette sier at man skal gjøre akkurat det samme som superclassen
+        super.().breathe()
+        #Dette er bare hva Fish kan gjøre i tillegg til breathe fra superclassen
+        print("doing this underwater")
+
+    def swim(self):
+        print("Moving in water.")
+
