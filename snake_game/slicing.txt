@@ -1,0 +1,8 @@
+Hvis vi har en liste med for eksempel piano_keys = [a,b,c,d,e,f,g] og vi bare ønsker å bruke c, d og e så 
+kan vi bruke "slicing"; piano_keys[2:5]. Det er fra posisjon 2 til 5
+
+Hvis vi vil ha fra til slutten så gjør vi [2:]. Da får vi med alt etter posisjon to
+
+For å ta f.eks annenhver piano_keys[2:5:2]
+
+Reverse listen: piano_keys[::-1]

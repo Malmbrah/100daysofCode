@@ -5,7 +5,7 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
-
+STARTING_POSITIONS = [(0,0), (-20,0),(-40,0)]
 
 class Snake:
 
@@ -27,25 +27,20 @@ class Snake:
 
         self.segments[0].forward(MOVE_DISTANCE)
 
-    def add_segment(self):
+    def add_segment(self, position):
             r = Turtle(shape = "square")
             r.color("white")
+            r.penup()
+            r.goto(position)
             self.segments.append(r)
 
     def extend(self):
-        pass
+        self.add_segment(self.segments[-1].position())
 
     def creating_snake(self):
         """Creating 3 turtles, making them white, setting them as a square and position them next to eachother"""
-        for _ in range(0,3):
-            self.add_segment()
-
-        x = 0
-        y = 0
-        for turtle in self.segments:
-            turtle.penup()
-            turtle.goto(x, y)
-            x -= 20
+        for position in STARTING_POSITIONS:
+            self.add_segment(position)
 
     def up(self):
         """Får slangen til å bevege seg oppover"""
