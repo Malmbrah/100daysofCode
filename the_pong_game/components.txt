@@ -1,0 +1,18 @@
+
+Ball:
+- Ballen spretter på langsidene
+- Ballen spretter hvis den treffer paddles
+- Ballen som en Turtle?
+- Ballen skal være en hvit enhet
+
+Scoreboard:
+- Skal vise poengene til hver deltaker
+- Skal oppdateres hvis ballen treffer kortsiden
+- Skal være øverst og sentrert
+
+Paddles (Ferdig):
+- Skal kunne styres av f.eks pilene og "as"
+- Hvite rektangler
+- Være turtles
+- Skal kun kunne beveges langs med y-aksen
+
